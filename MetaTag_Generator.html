@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Meta_Tag_Generator</title>
+<script>
+    function sendData(){
+        var TITLE = document.getElementById('input_title').value;
+        var URL = document.getElementById('input_URL').value;
+        var DESC = document.getElementById('input_Desc').value;
+        var IMG = document.getElementById('input_IMG').value;
+        
+        let OUTPUT = "<!-- Primary Meta Tags -->\n"+"<meta name=\"title\" content=\""+TITLE+"\" />\n"+"<meta name=\"description\" content=\""+DESC+"\" />\n\n"+"<!-- Open Graph / Facebook -->\n"+"<meta property=\"og:type\" content=\"website\" />\n"+"<meta property=\"og:url\" content=\""+URL+"\" />\n"+"<meta property=\"og:title\" content=\""+TITLE+"\" />\n"+"<meta property=\"og:description\" content=\""+DESC+"\" />\n"+"<meta property=\"og:image\" content=\""+IMG+"\" />\n\n"+"<!-- Twitter -->\n"+"<meta property=\"twitter:card\" content=\"summary_large_image\" />\n"+"<meta property=\"twitter:url\" content=\""+URL+"\" />\n"+"<meta property=\"twitter:title\" content=\""+TITLE+"\" />\n"+"<meta property=\"twitter:description\" content=\""+DESC+"\" />\n"+"<meta property=\"twitter:image\" content=\""+IMG+"\" />";
+        document.getElementById("demo3").textContent= OUTPUT;
+        navigator.clipboard.writeText(OUTPUT);
+        alert("Copied the text: \n\n" + OUTPUT);
+    }
+    function deleteData(){
+        sendData.TITLE="";
+        sendData.URL="";
+        sendData.DESC="";
+        sendData.IMG="";
+        document.getElementById('input_title').value="";
+        document.getElementById('input_URL').value="";
+        document.getElementById('input_Desc').value="";
+        document.getElementById('input_IMG').value="";
+        document.getElementById("demo3").textContent = "";
+        alert("Cleared All Text!");
+    }
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h style="font-size: 50px; font-weight: bold;">Meta Tag Generator</h><br><br>
+    <div>
+        <h style="font-size: 25px; font-weight: bold;">Title</h>
+        <textarea id="input_title" name="input1" rows="1" style="font-size: 15px; width: 99%;"></textarea><br>
+        <h style="font-size: 25px; font-weight: bold;">URL</h>
+        <textarea id="input_URL" name="input2" rows="1" style="font-size: 15px; width: 99%;"></textarea><br>
+        <h style="font-size: 25px; font-weight: bold;">Description</h>
+        <textarea id="input_Desc" name="input3" rows="1" style="font-size: 15px; width: 99%;"></textarea><br>
+        <h style="font-size: 25px; font-weight: bold;">Image URL</h>
+        <textarea id="input_IMG" name="input4" rows="1" style="font-size: 15px; width: 99%;"></textarea><br>
+        <button onclick="sendData()" style="font-size: 20px;">Submit and Copy to Clipboard</button><button onclick="deleteData()" style="font-size: 20px; float: right">Clear All Sections</button><br><br>
+        <h style="font-size: 25px; font-weight: bold;">Output</h>
+        <p id="demo3" style="border: 2px solid black; padding: 5px;"></p>      
+        </ul>
+    </div>
+</body>
+</html>
+
