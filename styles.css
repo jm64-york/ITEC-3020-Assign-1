@@ -129,27 +129,3 @@ div.desc {
   background-color: black;
   color: white;
 }
-
-.column2dark {
-  flex: 50%;
-  text-align: left; 
-  background-color: rgb(50, 50, 50);
-}
-
-.darkbuton, .darkdlbuton {
-  display: inline-block;
-  padding: 10px 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-  background-color:transparent;
-  border: none;
-  border-radius: 15px;
-  font-weight:bold;
-}
