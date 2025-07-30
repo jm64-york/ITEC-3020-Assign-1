@@ -71,7 +71,6 @@ div.desc {
   clear: both;
 }
 
-
 .row {
   display: flex;
 }
@@ -123,4 +122,9 @@ div.desc {
 .dlbutton:hover {
   background-color: rgb(100, 160, 255);
   color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }

@@ -41,6 +41,19 @@
       <a href="./projects.html"><button class="button">Projects &#128679</button></a>
       <a href="./blog.html"><button class="button">Blog &#128240</button></a>
       <a href="./contact.html"><button class="button">Contact &#128222</button></a>
+      <button onclick="darkmode()" id="darkModeToggle">Dark Mode</button>
+        <script>
+        function darkmode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+          if (document.getElementById("darkModeToggle").innerHTML === "Dark Mode"){
+            document.getElementById("darkModeToggle").innerHTML = "Light Mode";
+          }
+          else {
+            document.getElementById("darkModeToggle").innerHTML = "Dark Mode";
+          }
+        }
+        </script>
     </div>
   </div>
   <article>
