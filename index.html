@@ -32,7 +32,7 @@
     <h1>Joshua Mar</h1>
   </header>
   <div class="row">
-    <div class="column2" style="text-align: left; background-color: gainsboro;">
+    <div class="column2" id="Column2">
       <a href="./index.html"><button class="button"
           style="background-color: #ffffff; border-radius: 0px; padding-top: 15px; padding-bottom: 15px; margin-top: 0px;margin-bottom: 0px;">Home
           &#127968</button></a>
@@ -41,17 +41,20 @@
       <a href="./projects.html"><button class="button">Projects &#128679</button></a>
       <a href="./blog.html"><button class="button">Blog &#128240</button></a>
       <a href="./contact.html"><button class="button">Contact &#128222</button></a>
-      <button onclick="darkmode()" id="darkModeToggle">Dark Mode</button>
+      <button onclick="darkmode()" id="darkModeToggle" button class="button" style="float: right; margin-right: 10px;">Dark Mode</button>
         <script>
         function darkmode() {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-          if (document.getElementById("darkModeToggle").innerHTML === "Dark Mode"){
-            document.getElementById("darkModeToggle").innerHTML = "Light Mode";
+          var elementA = document.body;        
+          elementA.classList.toggle("dark-mode");
+
+          var elementB = document.getElementById("darkModeToggle");
+          if (elementB.textContent === "Dark Mode"){
+            elementB.textContent = "Light Mode";
           }
           else {
-            document.getElementById("darkModeToggle").innerHTML = "Dark Mode";
+            elementB.textContent = "Dark Mode";
           }
+
         }
         </script>
     </div>
