@@ -26,6 +26,20 @@
       text-shadow: 2px 2px 0 #1e00ff, -2px -2px 0 #1eff00, 2px -2px 0 red;
     }
   </style>
+  <script>
+    function darkmode() {
+      var elementA = document.body;        
+      elementA.classList.toggle("dark-mode");
+
+      var elementB = document.getElementById("darkModeToggle");
+      if (elementB.textContent === "Dark Mode"){
+        elementB.textContent = "Light Mode";
+      }
+      else {
+        elementB.textContent = "Dark Mode";
+      }
+    }
+    </script>
 </head>
 
 <body>

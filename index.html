@@ -25,39 +25,24 @@
       text-shadow: 2px 2px 0 #1e00ff, -2px -2px 0 #1eff00, 2px -2px 0 red;
     }
   </style>
+  <script>
+    function darkmode() {
+      var elementA = document.body;        
+      elementA.classList.toggle("dark-mode");
+
+      var elementB = document.getElementById("darkModeToggle");
+      if (elementB.textContent === "Dark Mode"){
+        elementB.textContent = "Light Mode";
+      }
+      else {
+        elementB.textContent = "Dark Mode";
+      }
+    }
+    </script>
 </head>
 
 <body>
   <header>
-    <h1>Joshua Mar</h1>
-    <div class="row">
-      <div class="column2" id="Column2">
-        <a href="./index.html"><button class="button"
-            style="background-color: #ffffff; border-radius: 0px; padding-top: 15px; padding-bottom: 15px; margin-top: 0px;margin-bottom: 0px;">Home
-            &#127968</button></a>
-        <a href="./about.html"><button class="button">About &#128216</button></a>
-        <a href="./resume.html"><button class="button">Resume &#128211</button></a>
-        <a href="./projects.html"><button class="button">Projects &#128679</button></a>
-        <a href="./blog.html"><button class="button">Blog &#128240</button></a>
-        <a href="./contact.html"><button class="button">Contact &#128222</button></a>
-        <button onclick="darkmode()" id="darkModeToggle" button class="button" style="float: right; margin-right: 10px;">Dark Mode</button>
-          <script>
-          function darkmode() {
-            var elementA = document.body;        
-            elementA.classList.toggle("dark-mode");
-
-            var elementB = document.getElementById("darkModeToggle");
-            if (elementB.textContent === "Dark Mode"){
-              elementB.textContent = "Light Mode";
-            }
-            else {
-              elementB.textContent = "Dark Mode";
-            }
-
-          }
-          </script>
-      </div>
-    </div>
   </header>
   <article>
     <div class="column"><img src="./index.jpg" alt="butterly"
@@ -70,15 +55,10 @@
     </div>
   </article>
   <footer style="background-color: rgb(64, 64, 64);align-items: flex-end; margin-top: auto;">
-    <div style="text-align: left; margin: 10px;">
-      <a href="./about.html"
-        style="color: white; padding-left: 20px; font-size: 20px; text-decoration: none; font-weight: 500;">About</a>
-      <a href="./contact.html"
-        style="color: white; padding-left: 20px; font-size: 20px; text-decoration: none; font-weight: 500;">Contact</a>
-      <hr style="width:auto;">
-      <p style="text-align: center; margin: 5px;color: white;">&#169 2025 Joshua Mar. All Rights Reserved.</p>
-    </div>
+
   </footer>
+  <script src="./headerfooter.js">
+  </script>
 </body>
 
 </html>
