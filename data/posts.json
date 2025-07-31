@@ -1,14 +1,10 @@
 [
     {
-        "post":"A",
-        "content":"1"
+        "post":"Implementing Dark Mode",
+        "content":"A simple solution to quickly change between light mode and dark mode is to first create a new class that uses dark mode colours. The classList.toggle method allows me to assign the new class to all elements without a class in the body of the document upon the function call which is triggered by the click of the button. The function also changes the text on the button on each click, checking the current state of the button's content and using .textContent to replace them."
     },
     {
-        "post":"B",
-        "content":"2"
-    },
-    {
-        "post":"C",
-        "content":"3"
+        "post":"Implementing JSON Blog Loader",
+        "content":"For loading the blog content from JSON file using Javascript, I created a new class for background styling under the postElement as well as title and content elements using existing header and paragraph tags. The objects from the JSON file were injected into each respective element for name and content before being appeneded to the postElement and then the blogList."
     }
 ]

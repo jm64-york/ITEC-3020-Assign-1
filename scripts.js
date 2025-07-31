@@ -14,8 +14,8 @@ postName.insertAdjacentText("afterbegin", post.post);
 postContent.insertAdjacentText("afterbegin", post.content);
 postElement.append (postName);
 postElement.append (postContent);
-blogList.append(postElement);
 //add postElement as a child to blog list
+blogList.append(postElement);
 });
 })
 .catch(error => console.error('Error loading blog posts:', error));
