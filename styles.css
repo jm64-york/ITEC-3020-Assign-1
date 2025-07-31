@@ -40,6 +40,13 @@ div.desc {
   padding: 15px;
   text-align: center;
   background-color: #ccc;
+  color: #000;
+}
+
+footer {
+  background-color: rgb(64, 64, 64);
+  align-items: flex-end; 
+  margin-top: auto;
 }
 
 * {
@@ -139,7 +146,7 @@ div.desc {
   color: white;
 }
 .blogPost {
-  background-color: gainsboro;
+  background-color: rgb(115, 115, 115);
   border-radius: 10px;
   padding: 5px;
   margin: 20px
