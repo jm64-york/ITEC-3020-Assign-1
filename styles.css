@@ -129,3 +129,9 @@ div.desc {
   background-color: black;
   color: white;
 }
+.blogPost {
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px
+}

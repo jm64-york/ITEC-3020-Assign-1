@@ -7,6 +7,7 @@ fetch('./data/posts.json')
 posts.forEach(post => {
 const postElement = document.createElement('div');
 // manipulate postElement to show the content of the blog post with the specific style defined for it
+postElement.classList.add("blogPost");
 postName = document.createElement('h2');
 postContent = document.createElement('p');
 postName.insertAdjacentText("afterbegin", post.post);
